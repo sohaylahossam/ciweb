@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Simple CI Demo</title>
+</head>
+<body>
+<main style="font-family: Arial, Helvetica, sans-serif; text-align:center; margin-top:4rem;">
+<h1>Simple CI → Docker Hub demo</h1>
+<p>Built locally or by Jenkins and pushed to Docker Hub.</p>
+<small>Built on: <span id="build-info">unknown</span></small>
+<script>
+// show a tiny build hint (Jenkins/Git could replace this during build if desired)
+document.getElementById('build-info').textContent = new Date().toLocaleString();
+</script>
+</main>
+</body>
+</html>
